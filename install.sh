@@ -38,6 +38,9 @@ defaults write com.apple.menuextra.battery ShowTime -string "NO"
 ## DISABLE NATURAL SCROLLING
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+## Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
 ## ENABLE TAB IN MODAL DIALOGS
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
