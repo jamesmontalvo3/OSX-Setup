@@ -341,7 +341,7 @@ brew install caskroom/cask/brew-cask
  
 ## CODING TOOLS
 # brew cask install bee sourcetree github chefdk
-brew cask install iterm2
+# brew cask install iterm2 # don't see a major value of this over normal terminal
 
 
 ## PICK AN EDITOR
@@ -374,7 +374,7 @@ mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text
 
 ## SYSTEM UTILITIES 
 # brew cask install unetbootin istat-menus alfred keepassx lastfm logmein-client royal-tsx jdownloader
-brew cask install disk-inventory-x moom caffeine rescuetime the-unarchiver dropbox google-drive
+brew cask install disk-inventory-x caffeine rescuetime the-unarchiver dropbox google-drive
 
 ## VIRTUALIZATION / CONTAINERS
 brew cask install boot2docker vagrant vmware-fusion virtualbox
