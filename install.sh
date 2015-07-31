@@ -397,6 +397,8 @@ brew cask install opera
 
 ## INSTALL DB TOOLS
 # brew cask install navicat-for-postgresql toad
+brew cask install sequel-pro
+
 ## INSTANT MESSAGING
 brew cask install adium colloquy slack
 
