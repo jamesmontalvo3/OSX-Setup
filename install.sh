@@ -412,6 +412,9 @@ brew cask install adium colloquy slack
 ## SPOTIFY
 # brew cask install spotify spotify-menubar spotify-notifications
 
+## VLC Media Player
+brew cask install vlc
+
 ## CONFIGURE ITERM TO NOT PROMPT ON QUIT
 # defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
