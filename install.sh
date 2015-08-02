@@ -243,6 +243,10 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 ## RESTART SYSTEM WHEN FROZEN/HUNG
 sudo systemsetup -setrestartfreeze on
 
+## SET SLEEP TIMES FOR COMPUTER (30 MIN) AND DISPLAY (5 MIN)
+sudo systemsetup -setcomputersleep 30 > /dev/null
+sudo systemsetup -setdisplaysleep 5 > /dev/null
+
 ## TURN OFF FAST USER SWITCHING
 sudo defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool false
 
