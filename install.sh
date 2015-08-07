@@ -381,7 +381,10 @@ mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text
 
 ## SYSTEM UTILITIES 
 # brew cask install unetbootin istat-menus alfred keepassx lastfm logmein-client royal-tsx jdownloader
-brew cask install disk-inventory-x caffeine rescuetime the-unarchiver dropbox google-drive handbrake
+brew cask install disk-inventory-x caffeine rescuetime the-unarchiver dropbox google-drive handbrake 
+
+## Spactacle: move and resize windows with ease
+brew cask install spectacle
 
 ## VIRTUALIZATION / CONTAINERS
 brew cask install boot2docker vagrant vmware-fusion virtualbox
