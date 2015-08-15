@@ -9,7 +9,7 @@
 sudo defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 ## SET HOSTNAME IN ALL THE RIGHT PLACES
-COMPUTERNAME="james-macbook"
+COMPUTERNAME="astrid-macbook"
 sudo scutil --set ComputerName "$COMPUTERNAME"
 sudo scutil --set HostName "$COMPUTERNAME"
 sudo scutil --set LocalHostName "$COMPUTERNAME"
@@ -305,13 +305,13 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add “Send” “@U21a
 
 ## Remove items from dock that you won't use
 ##
-dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Mail/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
+# dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Mail/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Contacts/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Calendar/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Reminders/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Maps/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
-dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Facetime/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
-dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/iTunes/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
+# dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Facetime/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
+# dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/iTunes/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/iBooks/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Notes/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 
@@ -341,7 +341,7 @@ brew install caskroom/cask/brew-cask
  
 ## CODING TOOLS
 # brew cask install bee sourcetree github chefdk
-brew cask install iterm2
+# brew cask install iterm2
 
 
 ## PICK AN EDITOR
@@ -374,10 +374,11 @@ mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text
 
 ## SYSTEM UTILITIES 
 # brew cask install unetbootin istat-menus alfred keepassx lastfm logmein-client royal-tsx jdownloader
-brew cask install disk-inventory-x moom caffeine rescuetime the-unarchiver dropbox google-drive
+brew cask install disk-inventory-x caffeine the-unarchiver dropbox google-drive
 
 ## VIRTUALIZATION / CONTAINERS
-brew cask install boot2docker vagrant vmware-fusion virtualbox
+# brew cask install boot2docker vagrant vmware-fusion virtualbox
+brew cask install virtualbox
 
 ## GRAPHICS APPS
 ## Set "wacom-tablet" to "wacom-bamboo-tablet" for bamboo users
@@ -392,13 +393,13 @@ brew cask install google-chrome && defaults write com.google.Chrome AppleEnableS
 brew cask install firefox
 
 ## INSTALL OPERA
-brew cask install opera
+# brew cask install opera
 ###############################################################################################################
 
 ## INSTALL DB TOOLS
 # brew cask install navicat-for-postgresql toad
 ## INSTANT MESSAGING
-brew cask install adium colloquy slack
+# brew cask install adium colloquy slack
 
 ## INSTALL BACKUP APPS
 # brew cask install backblaze carbon-copy-cloner
